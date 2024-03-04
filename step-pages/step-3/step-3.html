@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="step-3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="mobile-svg">
+      <div class="mobile-sidebar">
+        <div class="step-number-inactive">1</div>
+        <div class="step-number-inactive">2</div>
+        <div class="step-number">3</div>
+        <div class="step-number-inactive">4</div>
+      </div>
+    </div>
+    <div class="white-container">
+      <div class="sidebar-section">
+        <div class="step-sidebar">
+          <div class="step-number-inactive">1</div>
+          <div class="step-info">
+            <div class="step-name">STEP 1</div>
+            <div class="step-title">YOUR INFO</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">2</div>
+          <div class="step-info">
+            <div class="step-name">STEP 2</div>
+            <div class="step-title">SELECT PLAN</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number">3</div>
+          <div class="step-info">
+            <div class="step-name">STEP 3</div>
+            <div class="step-title">ADD-ONS</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">4</div>
+          <div class="step-info">
+            <div class="step-name">STEP 4</div>
+            <div class="step-title">SUMMARY</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-section">
+        <h1 class="header-info">Pick add-ons</h1>
+        <div class="subheader-info">Add-ons help enhance your gaming experience.</div>
+        <div class="add-ons-select-container">
+          <div class="add-on-select" onclick="selectAddOn(0)">
+            <input type="checkbox" class="checkbox-select" id="online-service">
+            <div class="mid-select-info">
+              <div class="add-on-name">Online service</div>
+              <div class="add-on-info">Access to multiplayer games</div>
+            </div>
+            <div class="add-on-price">+1/mo</div>
+          </div>
+          <div class="add-on-select" onclick="selectAddOn(1)">
+            <input type="checkbox" class="checkbox-select">
+            <div class="mid-select-info">
+              <div class="add-on-name">Larger storage</div>
+              <div class="add-on-info">Extra 1TB of cloud save</div>
+            </div>
+            <div class="add-on-price">+2/mo</div>
+          </div>
+          <div class="add-on-select" onclick="selectAddOn(2)">
+            <input type="checkbox" class="checkbox-select">
+            <div class="mid-select-info">
+              <div class="add-on-name">Customizable Profile</div>
+              <div class="add-on-info">Custom theme on your profile</div>
+            </div>
+            <div class="add-on-price">+2/mo</div>
+          </div>
+        </div>
+        <div class="step-change-container">
+          <div class="back-step-button" onclick="goBackButton()">Go Back</div>
+          <input type="submit" class="next-step-button-step3" value="Next Step" onclick="nextStep3()">
+        </div>
+      </div>  
+    </div>
+    <footer class="mobile-next-container">
+      <div class="back-step-button" onclick="goBackButton()">Go Back</div>
+      <input type="submit" class="next-step-button-step3" value="Next Step" onclick="nextStep3()">
+    </footer>
+    <script src="step-3.js"></script>
+  </body>
+</html>

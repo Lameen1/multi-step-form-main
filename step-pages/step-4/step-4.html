@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="step-4.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="mobile-svg">
+      <div class="mobile-sidebar">
+        <div class="step-number-inactive">1</div>
+        <div class="step-number-inactive">2</div>
+        <div class="step-number-inactive">3</div>
+        <div class="step-number">4</div>
+      </div>
+    </div>
+    <div class="white-container">
+      <div class="sidebar-section">
+        <div class="step-sidebar">
+          <div class="step-number-inactive">1</div>
+          <div class="step-info">
+            <div class="step-name">STEP 1</div>
+            <div class="step-title">YOUR INFO</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">2</div>
+          <div class="step-info">
+            <div class="step-name">STEP 2</div>
+            <div class="step-title">SELECT PLAN</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">3</div>
+          <div class="step-info">
+            <div class="step-name">STEP 3</div>
+            <div class="step-title">ADD-ONS</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number">4</div>
+          <div class="step-info">
+            <div class="step-name">STEP 4</div>
+            <div class="step-title">SUMMARY</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-section">
+        <h1 class="header-info">Finishing up</h1>
+        <div class="subheader-info">Double-check everything looks OK before confirming.</div>
+        <div class="summary-total-container">
+          <div class="step-2-selected-container">
+            <div class="plan-type-change">
+              <div class="final-plan"></div>
+              <div class="change-plan" onclick="changePlan()">Change</div>
+            </div>
+            <div class="cost-of-plan"></div>
+          </div>
+          <div class="divide"></div>
+          <div class="final-add-on-container">
+            
+          </div>
+        </div>
+        <div class="total-plan-container">
+          <div class="total-plan"></div>
+          <div class="total-plan-price"></div>
+        </div>
+        <div class="final-buttons-container">
+          <div class="final-back-button" onclick="goBackButton()">Go Back</div>
+          <input type="submit" class="final-confirm-button" value="Confirm" onclick="finalSubmit()">
+        </div>
+      </div>  
+    </div>
+    <script src="step-4.js"></script>
+  </body>
+</html>

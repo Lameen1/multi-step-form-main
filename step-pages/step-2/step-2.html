@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="step-2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="mobile-svg">
+      <div class="mobile-sidebar">
+        <div class="step-number-inactive">1</div>
+        <div class="step-number">2</div>
+        <div class="step-number-inactive">3</div>
+        <div class="step-number-inactive">4</div>
+      </div>
+    </div>
+    <div class="white-container">
+      <div class="sidebar-section">
+        <div class="step-sidebar">
+          <div class="step-number-inactive">1</div>
+          <div class="step-info">
+            <div class="step-name">STEP 1</div>
+            <div class="step-title">YOUR INFO</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number">2</div>
+          <div class="step-info">
+            <div class="step-name">STEP 2</div>
+            <div class="step-title">SELECT PLAN</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">3</div>
+          <div class="step-info">
+            <div class="step-name">STEP 3</div>
+            <div class="step-title">ADD-ONS</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">4</div>
+          <div class="step-info">
+            <div class="step-name">STEP 4</div>
+            <div class="step-title">SUMMARY</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-section">
+        <h1 class="header-info">Select your plan</h1>
+        <div class="subheader-info">You have the option of monthly or yearly billing</div>
+        <div class="plan-buttons-container" tabindex="0">
+          <div class="arcade-button plan-button" onclick="planSelection(0)">
+            <div class="top-plan">
+              <div class="plan-icon arcade-icon"></div>
+            </div>
+            <div class="bottom-plan">
+              <div class="plan-name">Arcade</div>
+              <div class="plan-price-container">
+                <div class="plan-price">$9/mo</div>
+                <!-- <div class="plan-payment-rate">/mo</div> -->
+              </div>
+              <div class="plan-yearly-info">2 months free</div>
+            </div>
+          </div>
+          <div class="advanced-button plan-button" onclick="planSelection(1)">
+            <div class="top-plan">
+              <div class="plan-icon advanced-icon"></div>
+            </div>
+            <div class="bottom-plan">
+              <div class="plan-name">Advanced</div>
+              <div class="plan-price-container">
+                <div class="plan-price">$12/mo</div>
+                <!-- <div class="plan-payment-rate">/mo</div> -->
+              </div>
+              <div class="plan-yearly-info">2 months free</div>
+            </div>
+          </div>
+          <div class="pro-button plan-button" onclick="planSelection(2)">
+            <div class="top-plan">
+              <div class="plan-icon pro-icon"></div>
+            </div>
+            <div class="bottom-plan">
+              <div class="plan-name">Pro</div>
+              <div class="plan-price-container">
+                <div class="plan-price">$15/mo</div>
+                <!-- <div class="plan-payment-rate">/mo</div> -->
+              </div>
+              <div class="plan-yearly-info">2 months free</div>
+            </div>
+          </div>
+        </div>
+        <div class="plan-type-container">
+          <div class="monthly-type" onclick="monthlyOption()">Monthly</div>
+          <div class="plan-type-swap" onclick="swapOption()">
+            <div class="plan-type-switch"></div>
+          </div>
+          <div class="yearly-type" onclick="yearlyOption()">Yearly</div>
+        </div>
+        <div class="step-change-container">
+          <div onclick="goBackButton()" class="back-step-button">Go Back</div>
+          <input type="submit" class="next-step-button-step2" value="Next Step" onclick="nextStep2()">
+        </div>
+      </div>  
+    </div>
+    <footer class="mobile-next-container">
+      <div onclick="goBackButton()" class="back-step-button">Go Back</div>
+      <input type="submit" class="next-step-button-step2" value="Next Step" onclick="nextStep2()">
+    </footer>
+    <script src="step-2.js"></script>
+  </body>
+</html>

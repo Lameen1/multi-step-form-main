@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="step-1.css" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="mobile-svg">
+      <div class="mobile-sidebar">
+        <div class="step-number">1</div>
+        <div class="step-number-inactive">2</div>
+        <div class="step-number-inactive">3</div>
+        <div class="step-number-inactive">4</div>
+      </div>
+    </div>
+    <div class="white-container">
+      <div class="sidebar-section">
+        <div class="step-sidebar">
+          <div class="step-number">1</div>
+          <div class="step-info">
+            <div class="step-name">STEP 1</div>
+            <div class="step-title">YOUR INFO</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">2</div>
+          <div class="step-info">
+            <div class="step-name">STEP 2</div>
+            <div class="step-title">SELECT PLAN</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">3</div>
+          <div class="step-info">
+            <div class="step-name">STEP 3</div>
+            <div class="step-title">ADD-ONS</div>
+          </div>
+        </div>
+        <div class="step-sidebar">
+          <div class="step-number-inactive">4</div>
+          <div class="step-info">
+            <div class="step-name">STEP 4</div>
+            <div class="step-title">SUMMARY</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-section">
+        <h1 class="header-info">Personal info</h1>
+        <div class="subheader-info">Please provide your name, email address, and phone number.</div>
+        <form>
+          <div class="input-tag-container">
+            <label for="phone-input" class="input-label">Name</label>
+            <div class="input-error name-error"></div>
+          </div>
+          <input id="name-input" type="text" class="input-bar" placeholder="e.g. Stephen King">
+        </form>
+        <form>
+          <div class="input-tag-container">
+            <label for="phone-input" class="input-label">Email Address</label>
+            <div class="input-error email-error"></div>
+          </div>
+          <input id="email-input" type="email" class="input-bar" placeholder="e.g. stephenking@lorem.com">
+        </form>
+        <form>
+          <div class="input-tag-container">
+            <label for="phone-input" class="input-label">Phone Number</label>
+            <div class="input-error phone-error"></div>
+          </div>
+          <input id="phone-input" type="text" class="input-bar" placeholder="e.g. + 1 234 567 8910">
+        </form>
+        <div class="next-container">
+          <input onclick="step1Next()" type="submit" value="Next Step" class="next-step-button-step1">
+        </div>
+      </div>  
+    </div>
+
+    <footer class="mobile-next-container">
+      <input onclick="step1Next()" type="submit" value="Next Step" class="next-step-button-step1">
+    </footer>
+
+    <script src="step-1.js"></script>
+  </body>
+</html>
